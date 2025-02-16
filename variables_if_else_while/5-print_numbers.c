@@ -8,8 +8,9 @@ int main(void)
 {
 	int count = 0;
 
-	for (count = 0; count <= 9; count++;)
+	for (count = 0; count <= 9; count++)
 {
 	putchar(count);
 }
+	return (0);
 }
