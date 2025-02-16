@@ -1,0 +1,15 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int count = 0;
+
+	for (count = 0; count <= 9; count++;)
+{
+	putchar(count);
+}
+}
