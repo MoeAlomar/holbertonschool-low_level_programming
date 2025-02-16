@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char count;
+	int count;
 
-	for (count = '0'; count <= '9'; count++)
+	for (count = 48; count <= 57; count++)
 {
 	putchar(count + ',' + ' ');
 }
