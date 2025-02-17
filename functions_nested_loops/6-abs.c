@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 /**
  * _abs - this function return the absolute value of n
  * @n: this is provided value n.
