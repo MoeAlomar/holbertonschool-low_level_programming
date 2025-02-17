@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _islower - this method will print if the char provided is lower case or not
  * @c: is the char provided as an int
