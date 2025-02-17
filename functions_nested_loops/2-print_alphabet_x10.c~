@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * print_alphabet - This method prints alphabets in small
+letters from a-z 10 times
+ *
+ * @void this method returns nothing.
+ */
+void print_alphabet_x10(void)
+{	char i;
+
+	int count = 1;
+
+	while (count <= 10)
+{
+	for (i = 'a'; i <= 'z'; i++)
+{
+	_putchar(i);
+}
+	_putchar('\n');
+	count++;
+}
+}
