@@ -9,6 +9,8 @@ int print_last_digit(int n)
 {
 	int last_digit;
 
+	unsigned int num;
+
 	if (n < 0)
 	num = -((unsigned int)n);
 	else
