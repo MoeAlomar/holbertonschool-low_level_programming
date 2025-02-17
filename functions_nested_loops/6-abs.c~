@@ -1,0 +1,14 @@
+#includ "main.h"
+/**
+ * _abs - this function return the absolute value of n
+ * @n: this is provided value n.
+ *
+ * Return: the method returns the abs value immediately
+ */
+int _abs(int n)
+{
+	if (n < 0)
+	return -n;
+	else
+	return n;
+}
