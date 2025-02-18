@@ -1,30 +1,35 @@
 #include "main.h"
+#include <stdio,h>
 /**
  * print_to_98 - this method print all the real number statring from n to 98
  * @n : is the number we're starting with
  * Return: this method is void and returns nothing
  */
+#include "main.h"
+#include <stdio.h>
 void print_to_98(int n)
 {
 	const int MAX = 98;
 
 	int i;
 
-	for (i = n; i <= MAX; i++)
+	if (n == 98)
+	printf("%d", MAX);
+	if (n > 98)
 {
-	if (i < 10)
+	for (i = n; i > MAX; i++)
 {
-	_putchar(i + '0');
+	printf("%d, ", i);
 }
-	else
+	printf("%d", MAX);
+}
+	else if (n < 98)
 {
-	_putchar((i / 10) + '0');
-	_putchar((i % 10) + '0');
-}
-	if (i < 98)
+	for (i = n; i < MAX; i++)
 {
-	_putchar(',');
+	printf("%d, ", i);
 }
-	_putchar(' ');
+	printf("%d", MAX);
 }
+
 }
