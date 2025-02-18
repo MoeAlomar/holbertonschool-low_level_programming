@@ -25,7 +25,6 @@ void jack_bauer(void)
 
 }
 	_putchar(':');
-
 	if (min < 10)
 {
 	_putchar('0');
@@ -37,9 +36,9 @@ void jack_bauer(void)
 	_putchar((min % 10) + '0');
 }
 
-
-}
 	_putchar('\n');
+}
+
 }
 
 }
