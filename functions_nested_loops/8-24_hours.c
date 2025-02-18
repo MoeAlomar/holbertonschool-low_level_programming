@@ -20,7 +20,9 @@ void jack_bauer(void)
 }
 	else if (hours >= 10)
 {
-	_putchar(hours + '0');
+	_putchar((hours / 10) + '0');
+	_putchar((hours % 10) + '0');
+
 }
 	_putchar(':');
 
@@ -31,12 +33,13 @@ void jack_bauer(void)
 }
 	else if (min >= 10)
 {
-	_putchar(min + '0');
+	_putchar((min / 10) + '0');
+	_putchar((min % 10) + '0');
 }
 
 
 }
-
+	_putchar('\n');
 }
 
 }
