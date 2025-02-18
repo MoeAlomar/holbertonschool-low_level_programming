@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio,h>
+#include <stdio.h>
 /**
  * print_to_98 - this method print all the real number statring from n to 98
  * @n : is the number we're starting with
