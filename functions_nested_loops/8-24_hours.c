@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * jack_bauer - this function prints every minute and hour of the day
+ *Return: this method returns void Nothing
+ */
+void jack_bauer(void)
+{
+	int min = 0;
+
+	int hours = 0;
+
+	for (hours = 0; hours <= 23; hours++)
+{
+	for (min = 0; min <= 59; min++)
+{
+	printf("%02d:%02d", hours, min);
+}
+}
+}
