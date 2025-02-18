@@ -17,7 +17,7 @@ void print_to_98(int n)
 	printf("%d\n", MAX);
 	if (n > 98)
 {
-	for (i = n; i > MAX; i++)
+	for (i = n; i > MAX; i--)
 {
 	printf("%d, ", i);
 }
