@@ -14,14 +14,14 @@ void print_to_98(int n)
 	int i;
 
 	if (n == 98)
-	printf("%d", MAX);
+	printf("%d\n", MAX);
 	if (n > 98)
 {
 	for (i = n; i > MAX; i++)
 {
 	printf("%d, ", i);
 }
-	printf("%d", MAX);
+	printf("%d\n", MAX);
 }
 	else if (n < 98)
 {
@@ -29,7 +29,7 @@ void print_to_98(int n)
 {
 	printf("%d, ", i);
 }
-	printf("%d", MAX);
+	printf("%d\n", MAX);
 }
 
 }
