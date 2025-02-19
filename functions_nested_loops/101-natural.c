@@ -8,7 +8,7 @@ void print_natural(void)
 {
 	int num = 1024;
 
-	int i, sum;
+	long long int i, sum;
 
 	for (i = 1; i < num; i++)
 {
