@@ -17,7 +17,7 @@ void print_natural(void)
 	sum += i;
 }
 }
-	printf("%llxsxd\n", sum);
+	printf("%lld\n", sum);
 }
 int main(void)
 {
