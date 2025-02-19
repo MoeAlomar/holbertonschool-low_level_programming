@@ -22,4 +22,5 @@ void print_natural(void)
 int main(void)
 {
 	print_natural();
+	return(0);
 }
