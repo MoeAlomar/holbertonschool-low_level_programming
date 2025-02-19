@@ -17,7 +17,7 @@ void print_natural(void)
 	sum += i;
 }
 }
-	printf("%ld\n", sum);
+	printf("%d\n", sum);
 }
 /**
  * main - this is the start point of the program.
