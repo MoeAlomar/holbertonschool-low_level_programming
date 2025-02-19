@@ -8,7 +8,7 @@ void print_natural(void)
 {
 	int num = 1024;
 
-	long long int i, sum;
+	long int i, sum;
 
 	for (i = 1; i < num; i++)
 {
@@ -17,7 +17,7 @@ void print_natural(void)
 	sum += i;
 }
 }
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 }
 int main(void)
 {
