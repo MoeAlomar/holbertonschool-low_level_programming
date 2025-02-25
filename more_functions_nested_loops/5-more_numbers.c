@@ -1,4 +1,4 @@
-#include "main.h
+#include "main.h"
 /**
  * most_numbers - this method prints the numbers (0-14) 10 times followed by a new line
  * Return: this method returns void.
