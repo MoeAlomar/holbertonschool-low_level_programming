@@ -14,7 +14,7 @@ int _isupper(int c)
 	_putchar('\n');
 	return (1);
 }
-	else
+	else if (c < 'A' || c > 'Z')
 {
 	_putchar(c);
 	_putchar(':');
