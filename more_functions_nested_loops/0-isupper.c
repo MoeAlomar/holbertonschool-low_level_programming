@@ -14,12 +14,10 @@ int _isupper(int c)
 	_putchar('\n');
 	return (1);
 }
-	else if (c < 'A' || c > 'Z')
-{
 	_putchar(c);
 	_putchar(':');
 	_putchar('0');
 	_putchar('\n');
 	return (0);
-}
+
 }
