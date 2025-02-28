@@ -18,9 +18,6 @@ int _atoi(char *s)
 	int result = 0;
 	int digit;
 
-	/* Process the string until a digit is encountered.
-	 * Count every '-' and '+' sign before the first digit.
-	 */
 	while (s[i])
 	{
 		if (s[i] == '-')
