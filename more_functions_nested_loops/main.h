@@ -1,5 +1,5 @@
 #ifndef MAIN_H
-0;10;1c#define MAIN_H
+#define MAIN_H
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
