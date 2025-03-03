@@ -8,19 +8,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int prefixLngth;
-	char *tmp = s;
+	unsigned int prefix_len = 0;
+	int i, j, found;
 
-	while (*accept != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 {
-	s = tmp;
-	while (*s != '\0')
+		found = 0;
+		for (j = 0; accept[j] != '\0'; j++)
 {
-	if (*accept == *s)
-	prefixLngth++;
-	s++;
+			if (s[i] == accept[j])
+{
+				found = 1;
+				break;
 }
-	accept++;
 }
-	return (prefixLngth);
+		if (!found)
+		break;
+	prefix_len++;
+}
+	return (prefix_len);
 }
