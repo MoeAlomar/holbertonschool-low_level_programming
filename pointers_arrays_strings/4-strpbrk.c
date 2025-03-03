@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _strpbrk - this method stops at the first occurance of a given char in a str
  * @s: this is the given string
