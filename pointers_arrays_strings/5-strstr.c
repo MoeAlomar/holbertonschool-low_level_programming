@@ -1,3 +1,4 @@
+#include <stddef.h>
 /**
  * _strstr - this method returns the pointer where the
  * first occurance of a substring is found
