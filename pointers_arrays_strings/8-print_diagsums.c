@@ -11,6 +11,8 @@ void print_diagsums(int *a, int size)
 	int i;
 	int primDiagSum, scndDiagSum;
 
+	primDiagSum = 0;
+	scndDiagSum = 0;
 	for (i = 0; i < size; i++)
 {
 	primDiagSum += a[i * size + i];
@@ -19,7 +21,6 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 {
 	scndDiagSum += a[i * size + (size - i - 1)];
-
-	printf("%d, %d", primDiagSum, scndDiagSum);
 }
+	printf("%d, %d\n", primDiagSum, scndDiagSum);
 }
