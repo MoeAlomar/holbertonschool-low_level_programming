@@ -13,11 +13,12 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 {
-	primDiagSum = a[i][i];
+	primDiagSum += a[i * size + i];
+;
 }
 	for (i = 0; i < size; i++)
 {
-	scndDiagSum = a[i][size - i - 1];
-}
+	scndDiagSum += a[i * size + (size - i - 1)];
+
 	printf("%d, %d", primDiagSum, scndDiagSum);
 }
