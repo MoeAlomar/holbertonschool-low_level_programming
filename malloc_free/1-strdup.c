@@ -1,28 +1,25 @@
 #include "main.h"
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 /**
  * _strdup - this method copies string to malloc string
  * @str: is the String
  * Return: this method returns pointer of malloc string
  */
-char *_strdup(char *str)
+char *_strdup(const char *str)
 {
-	char *p;
 
-	size_t len;
+	if (str == NULL)
+	return (NULL);
+	size_t len = strlen(str) + 1;
+	char *p = malloc(len);
 
-	len = strlen(str) + 1;
-
-	p = malloc(len);
-	if (*str == NULL)
+	if (p == NULL)
 	return (NULL);
 
-	for (str; *str != '\0'; str++)
-{
-	*p = *str;
-	p++;
-}
-	*p = '\0';
-	return (p);
+	char *copy = p;
+
+	while ((*copy++ = *str++));
+
+	return p;
 }
