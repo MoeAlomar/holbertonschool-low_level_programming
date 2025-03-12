@@ -6,7 +6,7 @@
  * @str: is the String
  * Return: this method returns pointer of malloc string
  */
-char *_strdup(const char *str)
+char *_strdup(char *str)
 {
 
 	if (str == NULL)
