@@ -1,39 +1,51 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdarg.h>
+/**
+ * print_all - Prints anything based on the format provided
+ * @format: A list of types of arguments passed to the function
+ *
+ * Description: The function prints characters, integers, floats,
+ * and strings. If a string is NULL, it prints (nil).
+ * Any other character in the format string is ignored.
+ */
 void print_all(const char * const format, ...)
 {
-    int num_args = strlen(format);
-    int i;
-    va_list args;
+	va_list args;
+	unsigned int i = 0;
+	char *str;
+	char *separator = "";
 
-    va_start(args,num_args);
-    for (i = 0; i < num_args; i++)
-    {
-        if(format[i] == 'c')
-    {
-        printf("%c", va_args(args, char));      if (i < num_args - 1) printf(", ");
-    }    
-        else if (format[i] == 'i')
-    {
-     printf("%d", va_args(args, int));
-     if (i < num_args - 1) printf(", ");
-    }
-    
-    else if (format[i] == 'f')
-{
-     printf("%f",  va_args(args, float));
-     if (i < num_args - 1) printf(", ");
+	va_start(args, format);
 
-}
-    else if (format[i] == 's')
-        {
-        printf("%s", va_arg(args, char*)); 
-        
-        if (i < num_args - 1)
-        printf(", ");
-}
-    }
-    va_end(args);
+	while (format && format[i])
+	{
+		if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
+		{
+			printf("%s", separator);
+			switch (format[i])
+			{
+				case 'c':
+					printf("%c", va_arg(args, int));
+					break;
+				case 'i':
+					printf("%d", va_arg(args, int));
+					break;
+				case 'f':
+					printf("%f", va_arg(args, double));
+					break;
+				case 's':
+					str = va_arg(args, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s", str);
+					break;
+			}
+			separator = ", ";
+		}
+		i++;
+	}
+
+	printf("\n");
+	va_end(args);
 }
